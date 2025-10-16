@@ -1,9 +1,18 @@
 .about-us-container {
+    /*
+    Why on earth is this course using fixed-pixel sizes?
+    This simply will not work on any device that isn't exactly sized like the instructor's...
+
     width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
+    */
     text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* I'm using flex: 1 instead to make sure the container takes up the remaining space */
+    flex: 1;
   }
   
   .about-us-heading {

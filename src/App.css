@@ -30,20 +30,33 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
+  /* 
+  Literally does nothing because this element is not positioned.
+
+  top: 100px; 
+  */
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
   gap: 20px;
+
+  /* I added padding to prevent text from touching the edges */
+  box-sizing: border-box;
+  padding: 0px 40px;
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
+  /* 
+  Why on earth is this course using fixed-pixel margins for positioning?
+  This simply will not work on any device that isn't exactly sized like the instructor's...
+
+  margin-top: 430px;
+  margin-left: 100px; 
   transform: translate(-50%, -50%);
+  */
   z-index: 1;
   text-align: center;
-  /* background-color: red; */
   width: 400px;
+  min-width: 400px;
   height: 400px;
   display: flex;
   align-items: center;
