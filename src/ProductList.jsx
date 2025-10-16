@@ -229,7 +229,9 @@ function ProductList({ onHomeClick }) {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '1100px',
+        width: '100%',
+        boxSizing: 'border-box',
+        padding: '0 30px',
     }
     const styleA = {
         color: 'white',
