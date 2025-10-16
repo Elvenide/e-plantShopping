@@ -58,6 +58,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+.product-list > h3 {
+    width: 100%;
+    text-align: center;
+}
 
 /* Product Card */
 .product-card {
